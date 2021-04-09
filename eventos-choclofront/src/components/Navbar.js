@@ -27,7 +27,7 @@ function Navbar() {
                         </li>
                     </ul >
                     <div className="navbar-nav ">
-                    <Link to="/"  className="nav-item btn btn-outline-light ">Iniciar Sesión</Link>
+                    <Link to="/login"  className="nav-item btn btn-outline-light ">Iniciar Sesión</Link>
                     <Link  to="/" className="nav-item btn btn-outline-light mx-2" >  Regístrate  </Link>
                 </div>
                 </div>
