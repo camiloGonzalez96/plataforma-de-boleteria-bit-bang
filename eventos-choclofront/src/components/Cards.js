@@ -6,9 +6,9 @@ function Cards() {
     return (
         <>
         <h1 className="titulo">Eventos</h1>
-        <div className="container">
+        <div className="container ">
         
-        <div className="row row-cols-1  row-cols-md-3 g-4">
+        <div className="row row-cols-1  row-cols-md-3 g-4 mb-5">
             <div className="col">
                 <CardItem
                 src="./images/05.jpg"
