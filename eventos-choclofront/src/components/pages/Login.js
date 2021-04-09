@@ -5,8 +5,8 @@ import FormularioLogin from '../FormularioLogin'
 function Login() {
     return (
         
-        <div className="container">
-            <h1 className="login">Login</h1>
+        <div className="login container">
+            <h1 >Login</h1>
             <FormularioLogin/>
           
         </div>

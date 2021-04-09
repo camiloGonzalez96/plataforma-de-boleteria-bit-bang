@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <>
 
-        <nav className="navbar navbar-expand-lg navbar-dark  bg-primary" >  
+        <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "#024f94"}} >  
                 <a className="navbar-brand mb-0 h1 mr-auto mx-5" href="/">
                     <img src="./logomaiz.png" alt="logo-eventos-choclo" width="30" height="24"/>
                     Eventos Choclo
@@ -27,7 +27,7 @@ function Navbar() {
                         </li>
                     </ul >
                     <div className="navbar-nav ">
-                    <Link to="/login"  className="nav-item btn btn-outline-light ">Iniciar Sesión</Link>
+                    <Link to="/login"  className="nav-item btn btn-outline-light " >Iniciar Sesión</Link>
                     <Link  to="/" className="nav-item btn btn-outline-light mx-2" >  Regístrate  </Link>
                 </div>
                 </div>

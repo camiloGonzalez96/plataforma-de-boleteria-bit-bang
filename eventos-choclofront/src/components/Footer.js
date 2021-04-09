@@ -2,9 +2,15 @@ import React from 'react'
 
 
 function Footer() {
+    const mystyle={
+        bottom:"0",
+        position: ""
+
+    }
+
     return (
-        
-            <footer className="bg-dark text-center text-white ">
+       
+            <footer className="bg-dark text-center text-white " style={{bottom:"0"}}>
                 <div className="container p-4 pb-0">
                     <section className="mb-4">
                         <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
