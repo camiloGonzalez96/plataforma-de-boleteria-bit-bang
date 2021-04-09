@@ -21,14 +21,14 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link " to="/">
+                            <Link className="nav-link " to="/eventos">
                                 Eventos
                             </Link>
                         </li>
                     </ul >
                     <div className="navbar-nav ">
-                    <Link to="/"  className="nav-item btn btn-primary ">Iniciar Sesión</Link>
-                    <Link  to="/" className="nav-item btn btn-outline-primary mx-2" >  Regístrate  </Link>
+                    <Link to="/"  className="nav-item btn btn-outline-light ">Iniciar Sesión</Link>
+                    <Link  to="/" className="nav-item btn btn-outline-light mx-2" >  Regístrate  </Link>
                 </div>
                 </div>
                 
