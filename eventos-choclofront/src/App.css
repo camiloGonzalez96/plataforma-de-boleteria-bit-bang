@@ -29,10 +29,11 @@
 }
 
 .eventos{
-  min-height: 62.5vh;
+  min-height: 70vh;
 }
 
 .login{  
+  min-height: 70vh;
   height: 59.5vh;
   max-width: 500px;
   min-width: 100px; 
