@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Footer() {
-    const mystyle={
+    const mystyle ={
         bottom:"0",
         position: ""
 
