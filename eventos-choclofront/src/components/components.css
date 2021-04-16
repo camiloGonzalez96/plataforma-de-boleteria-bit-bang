@@ -1,5 +1,7 @@
+
+/* Cards */
 .titulo{
-    background-color: goldenrod;
+    background-color: rgb(31, 31, 31);
     text-align: center;
     color:#fff;
 }
@@ -9,3 +11,7 @@
 .card-footer{
     text-align: center;
 }
+
+
+/* navbar */
+
