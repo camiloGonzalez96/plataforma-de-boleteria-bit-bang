@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/eventos" component={Eventos} />
           <Route path="/login" component={Login} />
-         /* <Route path="/register" component={Register} />*/
+          <Route path="/register" component={Register} />
         </Switch>
       </Router>
       <Footer />

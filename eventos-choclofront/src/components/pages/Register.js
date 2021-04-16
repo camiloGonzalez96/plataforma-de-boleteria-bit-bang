@@ -1,5 +1,4 @@
 import React from 'react'
-import FormularioLogin from '../FormularioLogin'
 import FormularioRegister from '../FormularioRegister'
 
 
