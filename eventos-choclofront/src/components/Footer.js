@@ -2,13 +2,8 @@ import React from 'react'
 
 
 function Footer() {
-    const mystyle={
-        bottom:"0",
-        position: ""
-
-    }
-
     return (
+        <>
        
             <footer className="bg-dark text-center text-white " style={{bottom:"0"}}>
                 <div className="container p-4 pb-0">
@@ -34,8 +29,8 @@ function Footer() {
                 </div>
 
             </footer>
-        
-    )
-}
+        </>
+  )
+ }
 
 export default Footer

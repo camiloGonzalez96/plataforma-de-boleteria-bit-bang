@@ -30,11 +30,12 @@
 
 .eventos{
   min-height: 70vh;
+  
 }
 
 .login{  
   min-height: 70vh;
-  height: 59.5vh;
+  height: 40.5vh;
   max-width: 500px;
   min-width: 100px; 
   padding: 20px;
@@ -45,7 +46,28 @@
 
 .login h1{    
   padding: 10px;
-  background-color: goldenrod;
+  background-color:  rgb(167, 50, 199);
+  color :#fff;
+  text-align: center;
+
+}
+
+.register{  
+  min-height: 70vh;
+  height: 70.5vh;
+  max-width: 500px;
+  min-width: 100px; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px gray;
+  margin :10px auto;
+  scroll-behavior: smooth;
+  
+}
+
+.register h1{    
+  padding: 10px;
+  background-color: rgb(167, 50, 199);
   color :#fff;
   text-align: center;
 
