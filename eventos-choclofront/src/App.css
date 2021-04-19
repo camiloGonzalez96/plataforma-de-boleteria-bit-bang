@@ -35,7 +35,7 @@
 
 .login{  
   min-height: 70vh;
-  height: 40.5vh;
+  
   max-width: 500px;
   min-width: 100px; 
   padding: 20px;
@@ -53,8 +53,8 @@
 }
 
 .register{  
-  min-height: 70vh;
-  height: 70.5vh;
+  
+  height: 90vh;
   max-width: 500px;
   min-width: 100px; 
   padding: 20px;
