@@ -10,31 +10,37 @@ import {Route } from "react-router-dom";
 
 
 
-//Pruebas Componente Navbar Link Propiedad to 
+//Pruebas Componente Navbar Link Propiedadades 
 describe('Pruebas sobre el componente Navbar',()=>{
-  test('Navbar incluye enlace a /', () => {                                       
+
+  test('Navbar incluye enlace a / y texto = Inicio', () => {                                       
     const wrapper = shallow(<Navbar />)
     expect(wrapper.find(Link).at(0).props().to).toBe('/')
+    expect(wrapper.find(Link).at(0).text()).toBe('Inicio')
    });
 
-   test('Navbar incluye enlace a /eventos', () => {                                       
+   test('Navbar incluye enlace a /eventos texto=Eventos', () => {                                       
     const wrapper = shallow(<Navbar />)
     expect(wrapper.find(Link).at(1).props().to).toBe('/eventos')
+    expect(wrapper.find(Link).at(1).text()).toBe('Eventos')
    });
 
-   test('Navbar incluye enlace a /login', () => {                                       
+   test('Navbar incluye enlace a /login texto=Iniciar Sesión', () => {                                       
     const wrapper = shallow(<Navbar />)
     expect(wrapper.find(Link).at(2).props().to).toBe('/login')
+    expect(wrapper.find(Link).at(2).text()).toBe('Iniciar Sesión')
    });
 
-   test('Navbar incluye enlace a /register', () => {                                       
+   test('Navbar incluye enlace a /register texto=Regístrate', () => {                                       
     const wrapper = shallow(<Navbar />)
     expect(wrapper.find(Link).at(3).props().to).toBe('/register')
+    expect(wrapper.find(Link).at(3).text()).toBe('Regístrate')
    });
 
-   test('Navbar incluye enlace a / en logo', () => {                                       
+   test('Navbar incluye enlace a / en logo texto=Eventos Choclo', () => {                                       
     const wrapper = shallow(<Navbar />)
     expect(wrapper.find('a').props().href).toBe('/')
+    expect(wrapper.find('a').text()).toBe('Eventos Choclo')
    });  
   })
 
