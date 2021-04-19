@@ -6,7 +6,7 @@ import Login from '../components/pages/Login'
 import Register from '../components/pages/Register'
 import App from '../App'
 import {Link} from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Route } from "react-router-dom";
 
 
 
@@ -64,8 +64,6 @@ describe('Pruebas sobre el componente Navbar',()=>{
       const wrapper = shallow(<App/>)   
       expect(wrapper.find(Route).at(3).props().path).toBe('/register')
       expect(wrapper.find(Route).at(3).props().component).toBe(Register)
-    })
-
-    
+    })    
 
   })
