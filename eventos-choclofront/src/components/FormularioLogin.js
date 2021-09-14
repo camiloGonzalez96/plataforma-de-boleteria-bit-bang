@@ -1,10 +1,10 @@
 import React from 'react'
 
+// comentario de pruebas
 function FormularioLogin() {
     return (
         <>
 
-        // comentario de pruebas
         <form>
             <div class="form-outline mb-4">
                 <label class="form-label" for="form2Example1">Correo Electrónico</label>
