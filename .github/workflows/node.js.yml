@@ -2,7 +2,7 @@ name: NodeChoclo.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, todoinicio ]
   pull_request:
     branches: [ main ]
 
