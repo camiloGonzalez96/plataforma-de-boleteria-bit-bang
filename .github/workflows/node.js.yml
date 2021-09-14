@@ -2,7 +2,7 @@ name: NodeChoclo.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main/eventos-choclofront ]
   pull_request:
     branches: [ main ]
 
