@@ -19,35 +19,35 @@ function Cards() {
             </div>
             <div className="col">
                 <CardItem
-                src="./images/05.jpg"
+                src="./images/6.jpg"
                 title="Concieto 2"
                 description="ONLINE" 
                 />
             </div>
             <div className="col">
                 <CardItem
-                src="./images/05.jpg"
+                src="./images/12.jpg"
                 title="Concieto 3"
                 description="ONLINE"  
                 />
             </div>
             <div className="col">
                 <CardItem
-                src="./images/05.jpg"
+                src="./images/9.jpg"
                 title="Concieto 4"
                 description="ONLINE" 
                 />
             </div>
             <div className="col">
                 <CardItem
-                src="./images/05.jpg"
+                src="./images/11.jpg"
                 title="Concieto 5"
                 description="ONLINE" 
                 />
             </div>
             <div className="col">
                 <CardItem
-                src="./images/05.jpg"
+                src="./images/14.jpg"
                 title="Concieto 6"
                 description="ONLINE" 
                 />
