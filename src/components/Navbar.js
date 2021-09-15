@@ -1,7 +1,41 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import Cookies from 'universal-cookie';
+
 function Navbar() {
+    const cookies = new Cookies();
+    var botonLogin =''
+    var botonRegistro=''
+   if( cookies.get('correo')){
+       botonLogin='Cerrar Sesión'
+       botonRegistro=cookies.get('nombre')
+
+   }else{
+       botonLogin='Iniciar Sesión'
+       botonRegistro='Regístrate'    
+    }  
+
+    function btnSesion(){
+        if(botonLogin==='Cerrar Sesión'){
+            cookies.remove('id',{ path: '/' })
+            cookies.remove('nombre',{ path: '/' })
+            cookies.remove('apellido',{ path: '/' })
+            cookies.remove('correo',{ path: '/' })
+            window.location = '/login';
+        }else{
+            window.location = '/login';
+        }
+    }
+    function btnUser(){
+        if(botonRegistro==='Regístrate'){           
+            window.location = '/register';
+        }else{
+            window.location = '/user';
+        }
+    }
+        
+    
     return (
         <>
 
@@ -28,8 +62,8 @@ function Navbar() {
                         </li>
                     </ul >
                     <div className="navbar-nav ">
-                    <Link to="/login"  className="nav-item btn btn-outline-light mx-3" >Iniciar Sesión</Link>
-                    <Link  to="/register" className="nav-item btn btn-outline-light mx-3" >Regístrate</Link>
+                    <button  className="nav-item btn btn-outline-light mx-3" onClick={btnSesion}>{botonLogin}</button>
+                    <button  className="nav-item btn btn-outline-light mx-3" onClick={btnUser}>{botonRegistro}</button>
                 </div>
                 </div>
                 

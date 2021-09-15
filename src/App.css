@@ -54,7 +54,7 @@
 
 .register{  
   
-  height: 90vh;
+  min-height: 100vh;
   max-width: 500px;
   min-width: 100px; 
   padding: 20px;
@@ -71,6 +71,9 @@
   color :#fff;
   text-align: center;
 
+}
+.userContainer{
+  min-height: 100vh;
 }
 
 
