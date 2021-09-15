@@ -1,12 +1,17 @@
 import React from 'react'
-
+import Cards from '../Cards'
 
 function Eventos() {
     return (
-        <div className='eventos'>
-            <h1 >Pagina Eventos</h1>
+        <div>
+            <>
+            <Cards/> 
+            </>
+
         </div>
     )
+
+        
 }
 
 export default Eventos
