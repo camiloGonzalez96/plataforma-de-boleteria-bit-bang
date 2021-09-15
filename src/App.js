@@ -6,6 +6,7 @@ import Eventos from "./components/pages/Eventos";
 import Footer from "./components/Footer";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
+import UserData from "./components/pages/UserData";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/eventos" component={Eventos} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/user" component={UserData} />
         </Switch>
       </Router>
       <Footer />
