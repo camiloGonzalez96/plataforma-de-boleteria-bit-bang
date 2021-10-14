@@ -9,8 +9,60 @@
     text-align: center;
 }
 .card-footer{
-    text-align: center;
+    text-align: center;   
+    padding: 0; 
 }
+
+
+.cards{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+.card-img{
+    height: 90%;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit:contain;
+} 
+
+
+.titulo{    
+    position: absolute;
+    font-size: 14px;
+    border-radius: 10%;
+}
+.disponible{
+    background-color: rgba(8, 150, 8,0.8);
+}
+.agotado{
+    background-color: rgba(197, 2, 2, 0.8);
+}
+
+.negrita{
+    color:rgb(167, 50, 199);
+}
+.iconoE{
+    color:rgb(167, 50, 199);
+    font-size: 30px;
+    font-weight: bold;
+}
+.total{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn-warning{
+    background-color:rgb(167, 50, 199);
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 
 /* navbar */

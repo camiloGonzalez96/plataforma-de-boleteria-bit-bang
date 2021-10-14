@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import UserData from "./components/pages/UserData";
+import Evento from "./components/pages/Evento";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/user" component={UserData} />
+          <Route path='/evento/:id' component={Evento}/>
         </Switch>
       </Router>
       <Footer />

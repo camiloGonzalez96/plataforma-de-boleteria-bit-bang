@@ -44,7 +44,7 @@
   margin :10px auto;
 }
 
-.login h1{    
+.login h1,.titulo-evento{    
   padding: 10px;
   background-color:  rgb(167, 50, 199);
   color :#fff;
@@ -76,6 +76,9 @@
   min-height: 100vh;
 }
 
+.pagina-evento{
+  min-height: 70vh;
+}
 
 
 @keyframes App-logo-spin {

@@ -8,6 +8,7 @@ function Home() {
     return (
         <>
         <Carousel/>
+        <h1 className='text-decoration-underline'>Ultimos eventos</h1>
         <Cards/>
         
             
