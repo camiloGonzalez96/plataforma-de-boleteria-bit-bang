@@ -37,7 +37,7 @@ function FormularioLogin() {
                         cookies.set('correo',respuesta[3],{ path: '/' })
                         cookies.set('celular',respuesta[4],{ path: '/' })
                         cookies.set('rol',respuesta[5],{ path: '/' })
-                        //window.location = '/user';
+                        window.location = '/user';
                     }else{
                         Swal.fire(
                             'Error!',
