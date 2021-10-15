@@ -1,6 +1,12 @@
 import React,{useState} from 'react'
+import Swal from 'sweetalert2'
+import Cookies from 'universal-cookie'
 
 function FormularioRegister() {
+    const cookies = new Cookies()
+    if(cookies.get('id')){window.location='/'}
+
+
     //Estados
     const [nombre,setNombre]=useState('')
     const [apellido,setApellido]=useState('')
@@ -27,13 +33,17 @@ function FormularioRegister() {
                 body: JSON.stringify(body)
             })
             if(response.status==200){
-                alert(`El usuario ${nombre}, ha sido creado exitosamente.`)
+                Swal.fire(
+                    'Registrado!',
+                   ` El usuario ${nombre}, ha sido creado exitosamente.`,
+                    'success'
+                  )                
                 setNombre('')
                 setApellido('')
                 setCelular('')
                 setCorreo('')
                 setContraseña('')                
-                window.location = '/login';
+                window.location = '/login';  
             }
         } catch (error) {
             console.log(error)

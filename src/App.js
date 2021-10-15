@@ -8,6 +8,8 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import UserData from "./components/pages/UserData";
 import Evento from "./components/pages/Evento";
+import CrearEvento from "./components/admin/CrearEvento";
+import EditarEvento from "./components/admin/EditarEvento";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/user" component={UserData} />
           <Route path='/evento/:id' component={Evento}/>
+          <Route path='/crear-evento' component={CrearEvento}/>
+          <Route path='/editar-evento/:id' component={EditarEvento}/>
         </Switch>
       </Router>
       <Footer />

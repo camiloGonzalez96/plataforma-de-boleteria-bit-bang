@@ -16,7 +16,7 @@ function CardItem(props) {
     }
     return (
         <>
-        <Link to={`/evento/${props.id}`}>
+        <Link to={`/evento/${props.id}`} className='text-decoration-none'>
         <div className="card h-100 m-3" style={{width:'12rem', height:'4rem'}} >
             <img src={props.src} class="card-img" alt="..."/>
                 <div className="card-img-overlay ">

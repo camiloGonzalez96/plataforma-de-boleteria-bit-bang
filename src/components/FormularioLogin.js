@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import Cookies from 'universal-cookie';
+import Swal from 'sweetalert2';
 
-function FormularioLogin() {
+function FormularioLogin() {    
     const cookies = new Cookies();
+    if(cookies.get('id')){window.location='/'}
     const [correo,setCorreo]=useState('')
     const [contraseña,setContraseña]=useState('')
 
@@ -20,17 +22,32 @@ function FormularioLogin() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
                   }).then(resp => resp.json()).then(data => {   
-                    console.log(data.data)
-                    let respuesta=data.data
-                    setCorreo('')
-                    setContraseña('')
-
-                    //cookies
-                    cookies.set('id',respuesta[0],{ path: '/' })
-                    cookies.set('nombre',respuesta[1],{ path: '/' })
-                    cookies.set('apellido',respuesta[2],{ path: '/' })
-                    cookies.set('correo',respuesta[3],{ path: '/' })
-                    window.location = '/user';
+                    console.log(data)
+                    if(data.data){                        
+                        let respuesta=data.data
+                        setCorreo('')
+                        setContraseña('')
+                        
+                        //cookies
+                        console.log(respuesta)
+                        cookies.set('token',data.token,{ path: '/' })
+                        cookies.set('id',respuesta[0],{ path: '/' })
+                        cookies.set('nombre',respuesta[1],{ path: '/' })
+                        cookies.set('apellido',respuesta[2],{ path: '/' })
+                        cookies.set('correo',respuesta[3],{ path: '/' })
+                        cookies.set('celular',respuesta[4],{ path: '/' })
+                        cookies.set('rol',respuesta[5],{ path: '/' })
+                        //window.location = '/user';
+                    }else{
+                        Swal.fire(
+                            'Error!',
+                            data.message,
+                            'error'
+                          )
+                          setCorreo('')
+                          setContraseña('')
+                    }
+                    
                 
                 })
             
