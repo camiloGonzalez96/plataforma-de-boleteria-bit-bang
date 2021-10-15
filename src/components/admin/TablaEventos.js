@@ -1,6 +1,6 @@
 import React from 'react'
 import {useFetch} from '../useFetch'
-import Cookies from 'universal-cookie/es6'
+import Cookies from 'universal-cookie'
 import Swal from 'sweetalert2'
 
 const TablaEventos = () => {
