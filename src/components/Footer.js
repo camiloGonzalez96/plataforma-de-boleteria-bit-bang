@@ -24,8 +24,8 @@ function Footer() {
                 </div>
 
                 <div className="text-center p-3" >
-                    © 2021 Copyright:
-                     <p className="text-white">Eventos Choclo</p>
+                    © 2021 Copyright Eventos Choclo
+                     <p className="text-white">By Bit-Bang</p>
                 </div>
 
             </footer>
